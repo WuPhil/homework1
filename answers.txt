@@ -1,3 +1,5 @@
-Q2: What is a remote repository?
+Q1: What is the difference between a merge and a rebase?
 
-Remote repositories refer to any repositories that aren't hosted on your local machine (those would be local repositories). They are helpful since it allows for easier ways to share code / projects with others, and can allow collaboration and synchronizing changes easily.
+A: Both of these actions are ways to manage code history when there are 2 separate branches of one code, one being a "main" branch, and a separate branch known as a "feature branch."
+A merge is where the both of the branches directly combine in a single step. It can be thought of as having 2 separate parents that "combine history" to make the newest version of the code. In blogs and stack overflow diagrams, this is seen as a diamond since it sees 1 origin for 2 branches that converge back together.
+A rebase is when one of the 2 branches decides to become the base and makes its commit (one becomes the base, and afterwards the other branch is added), so the history for the code has a new base. The blogs and stack overflow digrams show this as a straight line, with the main branch commiting itself first and the second being added later, as the history is "flattened."
